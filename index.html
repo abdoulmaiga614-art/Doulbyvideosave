@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DoulbyVideoSave</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header><div class="logo">▶</div><h1>DoulbyVideoSave</h1><p>Collez un lien TikTok public pour afficher la vidéo.</p></header>
+  <form id="form"><label for="url">Lien TikTok</label><input id="url" type="url" placeholder="https://www.tiktok.com/@.../video/... ou https://vm.tiktok.com/..." required><button type="submit">Afficher la vidéo</button></form>
+  <p id="status" role="status"></p>
+  <section id="result" hidden><div class="video"><iframe id="player" title="Vidéo TikTok" allow="fullscreen; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><p class="note">Si l’intégration est désactivée par TikTok ou le créateur, ouvrez la vidéo sur TikTok. Le téléchargement n’est possible que si TikTok et le créateur l’autorisent.</p><a id="open" target="_blank" rel="noopener">Ouvrir sur TikTok</a></section>
+  <footer><a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a> · <a href="contact.html">Contact</a></footer>
+</main><script src="app.js"></script>
+</body></html>
